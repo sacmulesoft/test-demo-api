@@ -9,7 +9,7 @@ http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/htt
 	</http:listener-config>
 	<flow name="test-demo-api-git-hubFlow" doc:id="f0c9e82f-8985-4608-869a-a95080e182fa" >
 		<http:listener doc:name="Listener" doc:id="f878a312-bdfa-4dfc-8444-57d0cf562cd5" config-ref="HTTP_Listener_config" path="/base"/>
-		<logger level="INFO" doc:name="Logger" doc:id="cf5fcd7b-07c4-497e-af2a-f6eedf0e1a9b" message='"hell world latest improved process tests"'/>
+		<logger level="INFO" doc:name="Logger" doc:id="cf5fcd7b-07c4-497e-af2a-f6eedf0e1a9b" message='"hell world latest improved process tests PULL FROM GITHUB"'/>
 		<set-payload value="#[payload]" doc:name="Set Payload" doc:id="ce24d077-fee4-4580-a2d0-7c5c78013677" />
 	</flow>
 </mule>
